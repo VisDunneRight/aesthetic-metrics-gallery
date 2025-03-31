@@ -1,0 +1,1514 @@
+[
+    {
+        "src": "images/exp0/graph2241.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph2241 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1808.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph1808 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph941.png",
+        "nodes": 41,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph941 with 41 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2137.png",
+        "nodes": 24,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2137 with 24 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4517.png",
+        "nodes": 191,
+        "exp": "Crossings",
+        "obj": 59.0,
+        "alt": "graph4517 with 191 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2599.png",
+        "nodes": 22,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2599 with 22 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2922.png",
+        "nodes": 28,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph2922 with 28 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph371.png",
+        "nodes": 14,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph371 with 14 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6671.png",
+        "nodes": 52,
+        "exp": "Crossings",
+        "obj": 10.0,
+        "alt": "graph6671 with 52 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph746.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph746 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph155.png",
+        "nodes": 12,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph155 with 12 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5033.png",
+        "nodes": 140,
+        "exp": "Crossings",
+        "obj": 38.0,
+        "alt": "graph5033 with 140 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5931.png",
+        "nodes": 101,
+        "exp": "Crossings",
+        "obj": 28.0,
+        "alt": "graph5931 with 101 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4025.png",
+        "nodes": 102,
+        "exp": "Crossings",
+        "obj": 30.0,
+        "alt": "graph4025 with 102 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1616.png",
+        "nodes": 43,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph1616 with 43 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph8462.png",
+        "nodes": 146,
+        "exp": "Crossings",
+        "obj": 52.0,
+        "alt": "graph8462 with 146 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5724.png",
+        "nodes": 60,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph5724 with 60 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1225.png",
+        "nodes": 36,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1225 with 36 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1371.png",
+        "nodes": 48,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1371 with 48 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10762.png",
+        "nodes": 200,
+        "exp": "Crossings",
+        "obj": 76.9999999999958,
+        "alt": "graph10762 with 200 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2834.png",
+        "nodes": 29,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph2834 with 29 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1614.png",
+        "nodes": 41,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph1614 with 41 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5727.png",
+        "nodes": 92,
+        "exp": "Crossings",
+        "obj": 17.0,
+        "alt": "graph5727 with 92 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1592.png",
+        "nodes": 36,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph1592 with 36 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9930.png",
+        "nodes": 99,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph9930 with 99 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9913.png",
+        "nodes": 46,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph9913 with 46 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2002.png",
+        "nodes": 126,
+        "exp": "Crossings",
+        "obj": 18.0,
+        "alt": "graph2002 with 126 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6677.png",
+        "nodes": 45,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph6677 with 45 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/incomplete.png",
+        "nodes": 0,
+        "exp": "Crossings",
+        "obj": -1,
+        "alt": "graph graph10758 did not complete",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1749.png",
+        "nodes": 51,
+        "exp": "Crossings",
+        "obj": 6.0,
+        "alt": "graph1749 with 51 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11638.png",
+        "nodes": 53,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph11638 with 53 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2418.png",
+        "nodes": 26,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph2418 with 26 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2319.png",
+        "nodes": 16,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2319 with 16 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2110.png",
+        "nodes": 11,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2110 with 11 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph8062.png",
+        "nodes": 164,
+        "exp": "Crossings",
+        "obj": 43.0,
+        "alt": "graph8062 with 164 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10199.png",
+        "nodes": 226,
+        "exp": "Crossings",
+        "obj": 28.0,
+        "alt": "graph10199 with 226 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2615.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2615 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1271.png",
+        "nodes": 40,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph1271 with 40 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6168.png",
+        "nodes": 70,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph6168 with 70 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4205.png",
+        "nodes": 97,
+        "exp": "Crossings",
+        "obj": 10.0,
+        "alt": "graph4205 with 97 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5668.png",
+        "nodes": 52,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph5668 with 52 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph143.png",
+        "nodes": 41,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph143 with 41 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9665.png",
+        "nodes": 152,
+        "exp": "Crossings",
+        "obj": 7.0,
+        "alt": "graph9665 with 152 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph8079.png",
+        "nodes": 191,
+        "exp": "Crossings",
+        "obj": 51.0,
+        "alt": "graph8079 with 191 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph7229.png",
+        "nodes": 58,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph7229 with 58 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11581.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph11581 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2178.png",
+        "nodes": 38,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2178 with 38 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph922.png",
+        "nodes": 24,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph922 with 24 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11456.png",
+        "nodes": 35,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph11456 with 35 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph3512.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph3512 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11542.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 8.0,
+        "alt": "graph11542 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph748.png",
+        "nodes": 13,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph748 with 13 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11601.png",
+        "nodes": 37,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph11601 with 37 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph7629.png",
+        "nodes": 153,
+        "exp": "Crossings",
+        "obj": 16.0,
+        "alt": "graph7629 with 153 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2846.png",
+        "nodes": 56,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2846 with 56 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2248.png",
+        "nodes": 45,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph2248 with 45 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1006.png",
+        "nodes": 15,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1006 with 15 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10395.png",
+        "nodes": 53,
+        "exp": "Crossings",
+        "obj": 7.0,
+        "alt": "graph10395 with 53 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2190.png",
+        "nodes": 57,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph2190 with 57 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph3131.png",
+        "nodes": 112,
+        "exp": "Crossings",
+        "obj": 12.0,
+        "alt": "graph3131 with 112 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph441.png",
+        "nodes": 13,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph441 with 13 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2180.png",
+        "nodes": 44,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2180 with 44 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2755.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph2755 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11018.png",
+        "nodes": 221,
+        "exp": "Crossings",
+        "obj": 49.0,
+        "alt": "graph11018 with 221 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph115.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph115 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph757.png",
+        "nodes": 22,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph757 with 22 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1838.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1838 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph3905.png",
+        "nodes": 53,
+        "exp": "Crossings",
+        "obj": 12.0,
+        "alt": "graph3905 with 53 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2294.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2294 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6952.png",
+        "nodes": 51,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph6952 with 51 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1767.png",
+        "nodes": 59,
+        "exp": "Crossings",
+        "obj": 6.0,
+        "alt": "graph1767 with 59 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5567.png",
+        "nodes": 94,
+        "exp": "Crossings",
+        "obj": 9.0,
+        "alt": "graph5567 with 94 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph938.png",
+        "nodes": 19,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph938 with 19 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10086.png",
+        "nodes": 43,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph10086 with 43 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5242.png",
+        "nodes": 61,
+        "exp": "Crossings",
+        "obj": 14.0,
+        "alt": "graph5242 with 61 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph549.png",
+        "nodes": 24,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph549 with 24 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1047.png",
+        "nodes": 28,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph1047 with 28 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph428.png",
+        "nodes": 22,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph428 with 22 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph722.png",
+        "nodes": 18,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph722 with 18 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4378.png",
+        "nodes": 129,
+        "exp": "Crossings",
+        "obj": 37.0,
+        "alt": "graph4378 with 129 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2164.png",
+        "nodes": 20,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2164 with 20 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2365.png",
+        "nodes": 40,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph2365 with 40 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1868.png",
+        "nodes": 58,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1868 with 58 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph8279.png",
+        "nodes": 170,
+        "exp": "Crossings",
+        "obj": 59.0,
+        "alt": "graph8279 with 170 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph3136.png",
+        "nodes": 200,
+        "exp": "Crossings",
+        "obj": 49.0,
+        "alt": "graph3136 with 200 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4294.png",
+        "nodes": 146,
+        "exp": "Crossings",
+        "obj": 31.0,
+        "alt": "graph4294 with 146 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph677.png",
+        "nodes": 22,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph677 with 22 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph3003.png",
+        "nodes": 94,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph3003 with 94 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11674.png",
+        "nodes": 56,
+        "exp": "Crossings",
+        "obj": 6.0,
+        "alt": "graph11674 with 56 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1827.png",
+        "nodes": 21,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1827 with 21 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1807.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph1807 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph8162.png",
+        "nodes": 196,
+        "exp": "Crossings",
+        "obj": 28.0,
+        "alt": "graph8162 with 196 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1661.png",
+        "nodes": 21,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph1661 with 21 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1113.png",
+        "nodes": 25,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1113 with 25 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11308.png",
+        "nodes": 48,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph11308 with 48 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/incomplete.png",
+        "nodes": 0,
+        "exp": "Crossings",
+        "obj": -1,
+        "alt": "graph graph11253 did not complete",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1870.png",
+        "nodes": 28,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph1870 with 28 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2773.png",
+        "nodes": 14,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph2773 with 14 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11672.png",
+        "nodes": 55,
+        "exp": "Crossings",
+        "obj": 20.0,
+        "alt": "graph11672 with 55 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph832.png",
+        "nodes": 36,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph832 with 36 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph483.png",
+        "nodes": 41,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph483 with 41 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5892.png",
+        "nodes": 71,
+        "exp": "Crossings",
+        "obj": 8.0,
+        "alt": "graph5892 with 71 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph759.png",
+        "nodes": 12,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph759 with 12 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9891.png",
+        "nodes": 55,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph9891 with 55 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5067.png",
+        "nodes": 131,
+        "exp": "Crossings",
+        "obj": 18.0,
+        "alt": "graph5067 with 131 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1927.png",
+        "nodes": 43,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1927 with 43 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph545.png",
+        "nodes": 32,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph545 with 32 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5644.png",
+        "nodes": 61,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph5644 with 61 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2766.png",
+        "nodes": 38,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph2766 with 38 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4136.png",
+        "nodes": 176,
+        "exp": "Crossings",
+        "obj": 52.0,
+        "alt": "graph4136 with 176 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2775.png",
+        "nodes": 25,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph2775 with 25 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2291.png",
+        "nodes": 16,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2291 with 16 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph7631.png",
+        "nodes": 57,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph7631 with 57 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2833.png",
+        "nodes": 30,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2833 with 30 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2887.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2887 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5833.png",
+        "nodes": 106,
+        "exp": "Crossings",
+        "obj": 11.0,
+        "alt": "graph5833 with 106 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1121.png",
+        "nodes": 21,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph1121 with 21 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1953.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1953 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11455.png",
+        "nodes": 42,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph11455 with 42 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6650.png",
+        "nodes": 108,
+        "exp": "Crossings",
+        "obj": 10.0,
+        "alt": "graph6650 with 108 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1636.png",
+        "nodes": 22,
+        "exp": "Crossings",
+        "obj": 7.0,
+        "alt": "graph1636 with 22 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11124.png",
+        "nodes": 49,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph11124 with 49 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph324.png",
+        "nodes": 13,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph324 with 13 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4374.png",
+        "nodes": 170,
+        "exp": "Crossings",
+        "obj": 22.0,
+        "alt": "graph4374 with 170 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5536.png",
+        "nodes": 68,
+        "exp": "Crossings",
+        "obj": 10.0,
+        "alt": "graph5536 with 68 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9416.png",
+        "nodes": 133,
+        "exp": "Crossings",
+        "obj": 43.0,
+        "alt": "graph9416 with 133 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2783.png",
+        "nodes": 19,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2783 with 19 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph331.png",
+        "nodes": 17,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph331 with 17 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph7408.png",
+        "nodes": 91,
+        "exp": "Crossings",
+        "obj": 10.0,
+        "alt": "graph7408 with 91 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2277.png",
+        "nodes": 27,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2277 with 27 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2416.png",
+        "nodes": 29,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2416 with 29 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6669.png",
+        "nodes": 117,
+        "exp": "Crossings",
+        "obj": 39.0,
+        "alt": "graph6669 with 117 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10140.png",
+        "nodes": 53,
+        "exp": "Crossings",
+        "obj": 8.0,
+        "alt": "graph10140 with 53 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1386.png",
+        "nodes": 59,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph1386 with 59 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph794.png",
+        "nodes": 22,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph794 with 22 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9949.png",
+        "nodes": 214,
+        "exp": "Crossings",
+        "obj": 65.0,
+        "alt": "graph9949 with 214 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6047.png",
+        "nodes": 44,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph6047 with 44 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1642.png",
+        "nodes": 21,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1642 with 21 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5498.png",
+        "nodes": 54,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph5498 with 54 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9919.png",
+        "nodes": 33,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph9919 with 33 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1725.png",
+        "nodes": 48,
+        "exp": "Crossings",
+        "obj": 6.0,
+        "alt": "graph1725 with 48 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6814.png",
+        "nodes": 99,
+        "exp": "Crossings",
+        "obj": 20.0,
+        "alt": "graph6814 with 99 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2218.png",
+        "nodes": 16,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2218 with 16 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph251.png",
+        "nodes": 36,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph251 with 36 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9841.png",
+        "nodes": 131,
+        "exp": "Crossings",
+        "obj": 55.0,
+        "alt": "graph9841 with 131 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph8928.png",
+        "nodes": 176,
+        "exp": "Crossings",
+        "obj": 50.0,
+        "alt": "graph8928 with 176 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2563.png",
+        "nodes": 33,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2563 with 33 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6423.png",
+        "nodes": 154,
+        "exp": "Crossings",
+        "obj": 20.0,
+        "alt": "graph6423 with 154 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2417.png",
+        "nodes": 23,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph2417 with 23 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2427.png",
+        "nodes": 25,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2427 with 25 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2483.png",
+        "nodes": 51,
+        "exp": "Crossings",
+        "obj": 7.0,
+        "alt": "graph2483 with 51 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2787.png",
+        "nodes": 51,
+        "exp": "Crossings",
+        "obj": 7.0,
+        "alt": "graph2787 with 51 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1876.png",
+        "nodes": 24,
+        "exp": "Crossings",
+        "obj": 6.0,
+        "alt": "graph1876 with 24 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1922.png",
+        "nodes": 41,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph1922 with 41 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1512.png",
+        "nodes": 34,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph1512 with 34 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph3916.png",
+        "nodes": 71,
+        "exp": "Crossings",
+        "obj": 6.0,
+        "alt": "graph3916 with 71 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10085.png",
+        "nodes": 46,
+        "exp": "Crossings",
+        "obj": 8.0,
+        "alt": "graph10085 with 46 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4717.png",
+        "nodes": 125,
+        "exp": "Crossings",
+        "obj": 42.0,
+        "alt": "graph4717 with 125 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4653.png",
+        "nodes": 148,
+        "exp": "Crossings",
+        "obj": 66.0,
+        "alt": "graph4653 with 148 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph8400.png",
+        "nodes": 194,
+        "exp": "Crossings",
+        "obj": 49.0,
+        "alt": "graph8400 with 194 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6101.png",
+        "nodes": 56,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph6101 with 56 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph6066.png",
+        "nodes": 48,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph6066 with 48 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1230.png",
+        "nodes": 30,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph1230 with 30 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph7087.png",
+        "nodes": 59,
+        "exp": "Crossings",
+        "obj": 2.0,
+        "alt": "graph7087 with 59 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11466.png",
+        "nodes": 50,
+        "exp": "Crossings",
+        "obj": 7.0,
+        "alt": "graph11466 with 50 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1022.png",
+        "nodes": 20,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph1022 with 20 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1017.png",
+        "nodes": 19,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph1017 with 19 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2749.png",
+        "nodes": 61,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph2749 with 61 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1200.png",
+        "nodes": 46,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph1200 with 46 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph9098.png",
+        "nodes": 117,
+        "exp": "Crossings",
+        "obj": 15.0,
+        "alt": "graph9098 with 117 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1002.png",
+        "nodes": 24,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph1002 with 24 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11027.png",
+        "nodes": 198,
+        "exp": "Crossings",
+        "obj": 44.0,
+        "alt": "graph11027 with 198 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2968.png",
+        "nodes": 55,
+        "exp": "Crossings",
+        "obj": 8.0,
+        "alt": "graph2968 with 55 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10651.png",
+        "nodes": 206,
+        "exp": "Crossings",
+        "obj": 48.0,
+        "alt": "graph10651 with 206 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph7882.png",
+        "nodes": 137,
+        "exp": "Crossings",
+        "obj": 11.0,
+        "alt": "graph7882 with 137 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph339.png",
+        "nodes": 21,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph339 with 21 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2413.png",
+        "nodes": 30,
+        "exp": "Crossings",
+        "obj": 0.0,
+        "alt": "graph2413 with 30 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2021.png",
+        "nodes": 45,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph2021 with 45 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph5882.png",
+        "nodes": 53,
+        "exp": "Crossings",
+        "obj": 9.0,
+        "alt": "graph5882 with 53 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph3796.png",
+        "nodes": 114,
+        "exp": "Crossings",
+        "obj": 18.0,
+        "alt": "graph3796 with 114 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4478.png",
+        "nodes": 168,
+        "exp": "Crossings",
+        "obj": 16.0,
+        "alt": "graph4478 with 168 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph11265.png",
+        "nodes": 60,
+        "exp": "Crossings",
+        "obj": 1.0,
+        "alt": "graph11265 with 60 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1130.png",
+        "nodes": 58,
+        "exp": "Crossings",
+        "obj": 13.0,
+        "alt": "graph1130 with 58 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2463.png",
+        "nodes": 57,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph2463 with 57 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph4652.png",
+        "nodes": 199,
+        "exp": "Crossings",
+        "obj": 40.0,
+        "alt": "graph4652 with 199 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph284.png",
+        "nodes": 44,
+        "exp": "Crossings",
+        "obj": 5.0,
+        "alt": "graph284 with 44 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph2771.png",
+        "nodes": 52,
+        "exp": "Crossings",
+        "obj": 4.0,
+        "alt": "graph2771 with 52 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph10464.png",
+        "nodes": 172,
+        "exp": "Crossings",
+        "obj": 17.0,
+        "alt": "graph10464 with 172 nodes",
+        "stream": false
+    },
+    {
+        "src": "images/exp0/graph1154.png",
+        "nodes": 50,
+        "exp": "Crossings",
+        "obj": 3.0,
+        "alt": "graph1154 with 50 nodes",
+        "stream": false
+    }
+]
