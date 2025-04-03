@@ -11,7 +11,8 @@
         exp: string;
         obj: number;
         shortexp: string;
-        color: string;
+        color1: string;
+        color2: string
         nodes: number;
         stream: boolean;
     };
@@ -19,9 +20,9 @@
     onMount(async () => {
         const response = await fetch(`${base}/data.json`);
         images = await response.json();
-        const cats = ["Crossings", "EdgeLength", "CrossingAngle", "CrossingFairness", "LengthFairness", "NodeSymmetry", "EdgeSymmetry", "EdgeBundling", "MinMaxCrossings", "MaxPlanar", "Crossings + EdgeLength", "Crossings + CrossingAngle", "Crossings + CrossingFairness", "Crossings + LengthFairness", "Crossings + NodeSymmetry", "Crossings + EdgeSymmetry", "Crossings + EdgeBundling", "Crossings + MinMaxCrossings", "Crossings + MaxPlanar", "EdgeLength (fixed x)", "CrossingAngle (fixed x)", "LengthFairness (fixed x)", "NodeSymmetry (fixed x)", "EdgeSymmetry (fixed x)", "EdgeLength + CrossingAngle (fixed x)", "EdgeLength + LengthFairness (fixed x)", "EdgeLength + NodeSymmetry (fixed x)", "Bend + EdgeSymmetry (fixed x)"];
-        const catsshort = ["Cr", "EL", "Angle", "CrFair", "ELFair", "NSym", "ESym", "Bundle", "MinMax", "Planar", "Cr+EL", "Cr+Angle", "Cr+CrFair", "Cr+ELFair", "Cr+NSym", "Cr+ESym", "Cr+Bundle", "Cr+MinMax", "Cr+Planar", "EL (fix)", "Angle (fix)", "ELFair (fix)", "NSym (fix)", "ESym (fix)", "EL+Angle", "EL+ELFair", "EL+NSym", "EL+ESym"];
-        images = images.map(img => ({...img, shortexp: catsshort[cats.indexOf(img.exp)], color: `color-${cats.indexOf(img.exp)+1}`}));
+        const cats = ["Crossings", "EdgeLength", "CrossingAngle", "CrossingFairness", "LengthFairness", "NodeSymmetry", "EdgeSymmetry", "EdgeBundling", "MinMaxCrossings", "Planarization", "Crossings + EdgeLength", "Crossings + CrossingAngle", "Crossings + CrossingFairness", "Crossings + LengthFairness", "Crossings + NodeSymmetry", "Crossings + EdgeSymmetry", "Crossings + EdgeBundling", "Crossings + MinMaxCrossings", "Crossings + Planarization", "EdgeLength (fixed x)", "CrossingAngle (fixed x)", "LengthFairness (fixed x)", "NodeSymmetry (fixed x)", "EdgeSymmetry (fixed x)", "EdgeLength + CrossingAngle (fixed x)", "EdgeLength + LengthFairness (fixed x)", "EdgeLength + NodeSymmetry (fixed x)", "EdgeLength + EdgeSymmetry (fixed x)"];
+        const catsshort = ["Cr", "EL", "Angle", "CrFair", "ELFair", "NSym", "ESym", "Bundle", "MinMax", "Planar", "Cr+EL", "Cr+Angle", "Cr+CrFair", "Cr+ELFair", "Cr+NSym", "Cr+ESym", "Cr+Bundle", "Cr+MinMax", "Cr+Planar", "EL (fix)", "Angle (fix)", "ELFair (fix)", "NSym (fix)", "ESym (fix)", "EL+Angle (fix)", "EL+ELFair (fix)", "EL+NSym (fix)", "EL+ESym (fix)"];
+        images = images.map(img => ({...img, shortexp: catsshort[cats.indexOf(img.exp)], color1: `color-${cats.indexOf(img.exp.split("+")[0].trim())+1}`, color2: img.exp.includes("+") ? `color-${cats.indexOf(img.exp.split("+")[1].replace("(fixed x)", "").trim())+1}`: "none"}));
         filterGallery();
         // images = images.filter(img => ['src/lib/images/exp0/graph155.png', 'src/lib/images/exp0/graph224.png', 'src/lib/images/exp0/graph229.png','src/lib/images/exp0/graph233.png', 'src/lib/images/exp0/graph292.png','src/lib/images/exp0/graph324.png','src/lib/images/exp0/graph331.png','src/lib/images/exp0/graph339.png','src/lib/images/exp0/graph371.png','src/lib/images/exp0/graph441.png','src/lib/images/exp0/graph515.png','src/lib/images/exp0/graph716.png','src/lib/images/exp0/graph722.png','src/lib/images/exp0/graph746.png','src/lib/images/exp0/graph748.png','src/lib/images/exp0/graph759.png','src/lib/images/exp0/graph779.png','src/lib/images/exp0/graph838.png','src/lib/images/exp0/graph910.png','src/lib/images/exp0/graph938.png','src/lib/images/exp0/graph1006.png','src/lib/images/exp0/graph1017.png','src/lib/images/exp0/graph1022.png','src/lib/images/exp0/graph1083.png','src/lib/images/exp0/graph1121.png','src/lib/images/exp0/graph1134.png','src/lib/images/exp0/graph1642.png'].includes(img.src));
     });
@@ -31,10 +32,9 @@
     let allGraphs = true;
 
 
-    let categories = ["Crossings", "EdgeLength", "CrossingAngle", "CrossingFairness", "LengthFairness", "NodeSymmetry", "EdgeSymmetry", "EdgeBundling", "MinMaxCrossings", "MaxPlanar", "Crossings + EdgeLength", "Crossings + CrossingAngle", "Crossings + CrossingFairness", "Crossings + LengthFairness", "Crossings + NodeSymmetry", "Crossings + EdgeSymmetry", "Crossings + EdgeBundling", "Crossings + MinMaxCrossings", "Crossings + MaxPlanar", "EdgeLength (fixed x)", "CrossingAngle (fixed x)", "LengthFairness (fixed x)", "NodeSymmetry (fixed x)", "EdgeSymmetry (fixed x)", "EdgeLength + CrossingAngle (fixed x)", "EdgeLength + LengthFairness (fixed x)", "EdgeLength + NodeSymmetry (fixed x)", "Bend + EdgeSymmetry (fixed x)"];
-    // const categories_short = ["Cr", "EL", "Angle", "CrFair", "ELFair", "NSym", "ESym", "Bundle", "MinMax", "Planar", "Cr+EL", "Cr+Angle", "Cr+CrFair", "Cr+ELFair", "Cr+NSym", "Cr+ESym", "Cr+Bundle", "Cr+MinMax", "Cr+Planar", "EL (fix)", "Angle (fix)", "ELFair (fix)", "NSym (fix)", "ESym (fix)", "EL+Angle (fix)", "EL+ELFair (fix)", "EL+NSym (fix)", "EL+ESym (fix)"];
+    let categories = ["Crossings", "EdgeLength", "CrossingAngle", "CrossingFairness", "LengthFairness", "NodeSymmetry", "EdgeSymmetry", "EdgeBundling", "MinMaxCrossings", "Planarization", "Crossings + EdgeLength", "Crossings + CrossingAngle", "Crossings + CrossingFairness", "Crossings + LengthFairness", "Crossings + NodeSymmetry", "Crossings + EdgeSymmetry", "Crossings + EdgeBundling", "Crossings + MinMaxCrossings", "Crossings + Planarization", "EdgeLength (fixed x)", "CrossingAngle (fixed x)", "LengthFairness (fixed x)", "NodeSymmetry (fixed x)", "EdgeSymmetry (fixed x)", "EdgeLength + CrossingAngle (fixed x)", "EdgeLength + LengthFairness (fixed x)", "EdgeLength + NodeSymmetry (fixed x)", "EdgeLength + EdgeSymmetry (fixed x)"];
+    const categories_short = ["Cr", "EL", "Angle", "CrFair", "ELFair", "NSym", "ESym", "Bundle", "MinMax", "Planar", "Cr+EL", "Cr+Angle", "Cr+CrFair", "Cr+ELFair", "Cr+NSym", "Cr+ESym", "Cr+Bundle", "Cr+MinMax", "Cr+Planar", "EL (fix)", "Angle (fix)", "ELFair (fix)", "NSym (fix)", "ESym (fix)", "EL+Angle (fix)", "EL+ELFair (fix)", "EL+NSym (fix)", "EL+ESym (fix)"];
     let selectedStream = false;
-    let selectedGraph = "All";
 
     let filters = categories.map(() => false);
     filters[0] = true;
@@ -102,7 +102,7 @@
     }
 
 
-    let minValue = 10;
+    let minValue = 30;
     // let maxValue = 250;
     const minLimit = 10;
     const maxLimit = 200;
@@ -169,8 +169,8 @@
                 <Popover triggeredBy="#b3" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
                     <div class="p-3 space-y-2">
                       <h3 class="font-semibold text-gray-900 dark:text-white">Aesthetics Evaluation Part 1</h3>
-                      Each experiment in this section was run with constraints for only 1 aesthetic metric added to the model.
-                      This makes some of the results rather silly-looking (crossing angle, symmetry, etc.), as some metrics are meant to be run in combination with others.
+                      Each graph was run with constraints for only 1 metric added to the model.
+                      This makes some of the graphs rather silly-looking (crossing angle, symmetry, etc.), as they are meant to be combined with other metrics.
                     </div>
                 </Popover>
             </p>
@@ -179,7 +179,7 @@
         </div>
         <div class="flex flex-wrap gap-2 mb-3">
             {#each categories.slice(0, 10) as category, index}
-                <Checkbox bind:checked={filters[index]} on:change={filterGallery} color="blue">{category}</Checkbox>
+                <Checkbox bind:checked={filters[index]} on:change={filterGallery} color="blue">{category} ({categories_short[index]})</Checkbox>
             {/each}
         </div>
 
@@ -193,9 +193,9 @@
                 <Popover triggeredBy="#b4" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
                     <div class="p-3 space-y-2">
                       <h3 class="font-semibold text-gray-900 dark:text-white">Aesthetics Evaluation Part 2</h3>
-                      Each experiment in this section was run with all constraints for each given metric, plus constraints for crossing minimization.
-                      The overall objective function minimized is the sum of the two objectives.
-                      Again, some results will look off due to the layouts only optimizing relative positions.
+                      Each graph in this section was run with all constraints for a metric, plus constraints for crossing minimization.
+                      The objective function minimized is the sum of the two objectives.
+                      Again, some results will look off due to the layouts only optimizing relative positions, especially with streamlining applied.
                     </div>
                 </Popover>
             </p>
@@ -218,9 +218,9 @@
                 <Popover triggeredBy="#b5" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
                     <div class="p-3 space-y-2">
                       <h3 class="font-semibold text-gray-900 dark:text-white">Aesthetics Evaluation Part 3</h3>
-                      Only metrics which optimize node y-positions were run in this section.
-                      Relative node positions were determined prior to any optimization (and then fixed during optimization), using the global sifting heuristic for crossing reduction.<br/>
-                      Fixing relative positions makes optimization much faster: for instance, edge length reduction times out often when run individually, but always completes in less than a second when relative positions are fixed.
+                      Only metrics which optimize node y-positions were calculated for this section.
+                      Relative node positions were determined prior to any optimization (and then fixed during optimization), using the <span class="font-bold">global sifting heuristic</span> for crossing reduction.
+                      <span class="italic">Fixing relative positions makes optimization much faster: for instance, edge length reduction times out often when run individually, but always completes in less than a second when relative positions are fixed.</span>
                     </div>
                 </Popover>
             </p>
@@ -242,8 +242,8 @@
                 <Popover triggeredBy="#b6" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
                     <div class="p-3 space-y-2">
                       <h3 class="font-semibold text-gray-900 dark:text-white">Aesthetics Evaluation Part 4</h3>
-                      The experiments in this section are identical to section 3, but with edge length minimization added to the model via linear combination.
-                      So, the layouts in this section should be most appealing since they include crossing reduction, optimal edge length minimization, and a third aesthetic optimization.
+                      The models run in this section are identical to section 3, but with edge length minimization added by summing the two objective functions.
+                      So, the layouts in this section should be most appealing since they include crossing reduction, optimal edge length minimization, plus a third aesthetic optimization.
                     </div>
                 </Popover>
             </p>
@@ -309,7 +309,17 @@
             {/if}
               <div class="absolute bottom-0 left-0 text-gray text-sm p-2 w-full">
                   {#if item.alt}
-                    <span class={`${item.color} font-bold`}>{item.shortexp}</span> / {item.alt} (N={item.nodes})
+                    {#if item.color2 !== "none"}
+                        {#if item.shortexp.includes("fix")}
+                            <span class={`${item.color1} font-bold`}>{item.shortexp.split('+')[0]}</span>+<span class={`${item.color2} font-bold`}>{item.shortexp.split('+')[1].replace(" (fix)", "")}</span><span class="italic">(fix)</span> / {item.alt} (N={item.nodes})
+                        {:else}
+                            <span class={`${item.color1} font-bold`}>{item.shortexp.split('+')[0]}</span>+<span class={`${item.color2} font-bold`}>{item.shortexp.split('+')[1]}</span> / {item.alt} (N={item.nodes})
+                        {/if}
+                    {:else if item.shortexp.includes("fix")}
+                        <span class={`${item.color1} font-bold`}>{item.shortexp.split(' ')[0]}</span><span class="italic">(fix)</span> / {item.alt} (N={item.nodes})
+                    {:else}
+                        <span class={`${item.color1} font-bold`}>{item.shortexp}</span> / {item.alt} (N={item.nodes})
+                    {/if}
                   {/if}
               </div>
         </div>
@@ -348,30 +358,30 @@
       overflow: visible;
     }
 
-    .color-1 { color: hsl(344, 22%, 43%); }
-    .color-2 { color: hsl(61, 24%, 43%); }
-    .color-3 { color: hsl(292, 28%, 55%); }
-    .color-4 { color: hsl(150, 35%, 52%); }
-    .color-5 { color: hsl(28, 32%, 58%); }
-    .color-6 { color: hsl(201, 10%, 52%); }
-    .color-7 { color: hsl(111, 13%, 70%); }
-    .color-8 { color: hsl(190, 19%, 53%); }
-    .color-9 { color: hsl(325, 13%, 65%); }
-    .color-10 { color: hsl(242, 32%, 43%); }
-    .color-11 { color: hsl(243, 22%, 57%); }
-    .color-12 { color: hsl(345, 40%, 48%); }
-    .color-13 { color: hsl(358, 18%, 55%); }
-    .color-14 { color: hsl(118, 38%, 67%); }
+    .color-1 { color: #f44336; }
+    .color-2 { color: #2196f3; }
+    .color-3 { color: #ff9800; }
+    .color-4 { color: #cddc39 }
+    .color-5 { color: #ffc107; }
+    .color-6 { color: #00bcd4; }
+    .color-7 { color: #009688; }
+    .color-8 { color: #795548; }
+    .color-9 { color: #4caf50; }
+    .color-10 { color: #9c27b0; }
+    .color-11 { color: #03a9f4; }
+    .color-12 { color: #ffb74d; }
+    .color-13 { color: #4dd0e1; }
+    .color-14 { color: #4db6ac; }
     .color-15 { color: hsl(163, 33%, 70%); }
     .color-16 { color: hsl(87, 40%, 66%); }
     .color-17 { color: hsl(105, 38%, 51%); }
     .color-18 { color: hsl(7, 14%, 62%); }
-    .color-19 { color: hsl(65, 25%, 43%); }
-    .color-20 { color: hsl(278, 13%, 63%); }
-    .color-21 { color: hsl(351, 27%, 41%); }
-    .color-22 { color: hsl(73, 37%, 40%); }
-    .color-23 { color: hsl(234, 10%, 55%); }
-    .color-24 { color: hsl(305, 33%, 48%); }
+    .color-20 { color: #2196f3; }
+    .color-21 { color: #ff9800; }
+    .color-22 { color: #ffc107; }
+    .color-23 { color: #00bcd4; }
+    .color-24 { color: #009688; }
+    .color-19 { color: hsl(305, 33%, 48%); }
     .color-25 { color: hsl(62, 17%, 48%); }
     .color-26 { color: hsl(71, 24%, 70%); }
     .color-27 { color: hsl(341, 17%, 53%); }
