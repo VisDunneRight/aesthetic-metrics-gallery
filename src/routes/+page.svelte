@@ -15,11 +15,12 @@
         <p class="text-lg leading-relaxed">
             This site has layouts for a subset of the graphs optimized in our experimental evaluation of CINDER.
             Specifically, our gallery contains 150 randomly sampled Rome-lib graphs when optimized according to 28 different aesthetic metrics/combinations of aesthetic metrics, to demonstrate that CINDER is expressive with respect to different graph layout aesthetic criteria.
+            The time limit for each layout was 10 minutes.
             We also include all layouts with & without streamlining constraints.
             This is over 6000 layouts, so the gallery may take a few seconds to load!
         </p>
         <p class="text-lg leading-relaxed">
-            For a full copy of our paper, which contains definitions for all models used to genrate these layouts, check out <a class="underline text-blue-600 hover:text-blue-800" href="https://osf.io/9cywt/?view_only=3c6834305db44d148fafc933efe665d8">osf.io/9cywt/</a>.
+            For a full copy of our paper, which contains definitions for all models used to generate these layouts, check out <a class="underline text-blue-600 hover:text-blue-800" href="https://osf.io/9cywt/?view_only=3c6834305db44d148fafc933efe665d8">osf.io/9cywt/</a>.
             Rome-lib is downloadable at <a class="underline text-blue-600 hover:text-blue-800" href="https://visdunneright.github.io/gd_benchmark_sets/">visdunneright.github.io/gd_benchmark_sets/</a>.
         </p>
         <div class="flex max-w-3xl justify-center"><GradientButton outline class="w-50 flex-none" size="lg" color="greenToBlue" href="{base}/gallery">View the Gallery!</GradientButton></div>

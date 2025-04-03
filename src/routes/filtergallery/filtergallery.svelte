@@ -40,6 +40,9 @@
     filters[0] = true;
     filters[10] = true;
     filters[24] = true;
+
+    const metricsInfo = ["Minimize the number of times edges in the graph cross over each other", "Minimize total edge length in terms of Manhattan distance", "Minimize the difference between the crossing angle and 90 degrees, over all angles created by two edges that cross (layouts with this metric are drawn with straight line edges to emphasize the crossing angle)", "Minimize the difference in number of crossings per node between the group of nodes colored blue and the group colored gray", "Minimize the difference in edge length per node between the group of nodes colored blue and the group colored gray", "Maximize the number of nodes which are mirrored across a horizontal axis of symmetry", "Maximize the number of edges which are mirrored across a horizontal axis of symmetry (an edge is mirrored if and only if both of its endpoints are mirrored)", "Maximize the number of adjacent anchor nodes (nodes that make up a long edge)", "Minimize the maximum number of edge crossings on any individual edge", "Minimize the number of planarization edges such that when the planarization edges are removed the graph is planar (no edge crossings)"];
+    const metricsInfoHead = ["Edge Crossings", "Edge Length", "Crossing Angle", "Crossing Fairness", "Length Fairness", "Node Symmetry", "Edge Symmetry", "Edge Bundling", "Min-Max Crossings", "Planarization"];
   
     let filteredImages = images;
   
@@ -117,21 +120,21 @@
 
 <div class="max-w-5xl mx-auto m-2">
     <!-- <div>{JSON.stringify(filteredImages)}</div> -->
-    <div class="sticky-div rounded-br-lg rounded-bl-lg">
-        <div class="flex items-center mb-2">
+    <div class="sticky-div rounded-br-lg rounded-bl-lg hidden sm:block overflow-y-auto md:overflow-y-visible p-2 pt-12 md:pt-16">
+        <div class="flex items-center md:mb-2">
             <!-- <label for="graph" class="text-lg text-gray-700">Filter by Graph:</label> -->
             <!-- <div class="flex-grow"></div> -->
-            <div class="ms-3 me-3 w-75">
+            <div class="ms-3 me-3 w-75 hidden md:block">
                 <Label>Min nodes: {minValue}</Label>
                 <Range id="range-steps" min={minLimit} max={maxLimit} bind:value={minValue} on:change={filterByGraph} step=5 />
             </div>
 
-            <Toggle bind:checked={selectedStream} on:change={filterGallery} class="me-3" color="teal">Toggle Streamlining</Toggle>
+            <Toggle bind:checked={selectedStream} on:change={filterGallery} class="me-3 flex-none md:flex-initial" color="teal">Toggle Streamlining</Toggle>
 
             <div class="flex-grow"></div>
 
-            <Button outline color="green" class="me-3">Filter by Graph<ChevronDownOutline class="w-4 h-4 ms-2 text-blue dark:text-white" /></Button>
-            <Dropdown class="overflow-y-auto px-3 pb-3 text-sm h-44 me-3" placement='bottom'>
+            <Button outline color="green" class="me-3 invisible md:visible flex-none">Filter by Graph<ChevronDownOutline class="w-4 h-4 ms-2 text-blue dark:text-white" /></Button>
+            <Dropdown class="overflow-y-auto px-3 pb-3 text-sm h-44 me-3 hidden md:block" placement='bottom'>
                 <div slot="header" class="p-3">
                 <Search size="md" bind:value={searchTerm}/>
                 <Checkbox bind:checked={allGraphs} on:change={showAllGraphs} class="mt-2" color="green">Show All</Checkbox>
@@ -152,7 +155,7 @@
                 {/each}
             </select> -->
             
-            <Button on:click={toggleVisible} class="me-3" color="blue">
+            <Button on:click={toggleVisible} class="me-3 flex-none" color="blue">
                 <AdjustmentsHorizontalOutline class="pe-1" /> Filter by Experiment
             </Button>
         </div>
@@ -161,9 +164,9 @@
         <Hr/>
         <div class="flex gap-4 items-center mt-3 mb-2">
             <p class="w-64 flex-1 text-sm font-medium text-gray-700">
-                Individual Aesthetic Metrics
+                <span class="text-blue-900">Individual Aesthetic Metrics</span>
                 <button id="b3">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b3" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -179,15 +182,25 @@
         </div>
         <div class="flex flex-wrap gap-2 mb-3">
             {#each categories.slice(0, 10) as category, index}
-                <Checkbox bind:checked={filters[index]} on:change={filterGallery} color="blue">{category} ({categories_short[index]})</Checkbox>
+                <Checkbox bind:checked={filters[index]} on:change={filterGallery} color="blue">{category}</Checkbox>
+                <button id={`bt${index}`} class="me-2">
+                    <QuestionCircleSolid class="w-5 h-5" />
+                    <span class="sr-only">Show information</span>
+                </button>
+                <Popover triggeredBy={`#bt${index}`} class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
+                    <div class="p-3 space-y-2">
+                        <h3 class="font-semibold text-gray-900 dark:text-white">{metricsInfoHead[index]} (<span class={`color-${index + 1}`}>{categories_short[index]}</span>)</h3>
+                        {metricsInfo[index]}
+                    </div>
+                </Popover>
             {/each}
         </div>
 
         <div class="flex gap-4 items-center mt-3 mb-2">
             <p class="w-64 flex-1 text-sm font-medium text-gray-700">
-                Metric + Crossing Minimization
+                <span class="text-blue-900">Metric + Crossing Minimization</span>
                 <button id="b4">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b4" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -210,9 +223,9 @@
 
         <div class="flex gap-4 items-center mt-3 mb-2">
             <p class="w-64 flex-1 text-sm font-medium text-gray-700">
-                Y-Metric With Fixed X
+                <span class="text-blue-900">Y-Metric With Fixed X</span>
                 <button id="b5">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b5" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -234,9 +247,10 @@
         </div>
 
         <div class="flex gap-4 items-center mt-3 mb-2">
-            <p class="w-64 flex-1 text-sm font-medium text-gray-700">Y-Metric + Edge Length Minimization
+            <p class="w-64 flex-1 text-sm font-medium text-gray-700">
+                <span class="text-blue-900">Y-Metric + Edge Length Minimization</span>
                 <button id="b6">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b6" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -296,10 +310,11 @@
         </div> -->
     <!-- </div> -->
   
+    <div class="h-10 sm:hidden"></div>
     <div class="grid grid-cols-3 gap-4 p-2 mt-5">
       {#each filteredImages as item}
         <!-- ring-2 ring-gray-300 -->
-        <div class="relative ring-2 ring-gray-300 p-2 pb-5 rounded-lg">
+        <div class="relative ring-2 ring-gray-300 p-2 pb-12 md:pb-7 rounded-lg">
 
         <!-- <div class={`relative border-3 ${item.color} p-2 pb-5 rounded-lg`}> -->
             {#if item.src !== "images/incomplete.png"}
@@ -350,12 +365,11 @@
       position: sticky;
       top: 20px; /* Adjust this to match the height of your NavBar */
       background-color: #f8f8f8;
-      padding: 20px;
-      padding-top: 71px;
+      /* padding: 20px;
+      padding-top: 71px; */
       border: 1px solid #ddd;
       z-index: 15; /* Ensure it's behind the navbar if overlapping */
       max-height: calc(100vh); /* Prevent overflow beyond the viewport */
-      overflow: visible;
     }
 
     .color-1 { color: #f44336; }

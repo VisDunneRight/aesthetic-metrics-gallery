@@ -15,7 +15,7 @@
 </NavBrand>
 <NavHamburger />
 <NavUl {activeUrl} {activeClass} {nonActiveClass}>
+    <NavLi href="{base}/">Home</NavLi>
     <NavLi href="{base}/gallery">Gallery</NavLi>
-    <NavLi href="{base}/">About</NavLi>
 </NavUl>
 </Navbar>
