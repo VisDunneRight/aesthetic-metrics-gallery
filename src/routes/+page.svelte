@@ -3,7 +3,7 @@
     import Navbar from "./navbar/navbar.svelte";
 </script>
 
-<div class="w-screen">
+<div class="w-screen relative px-8">
 <Navbar/>
 <Filtergallery/>
 </div>
