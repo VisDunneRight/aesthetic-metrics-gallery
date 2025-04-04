@@ -11,7 +11,7 @@
 <Navbar class="w-full px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 start-0 border-b">
 <NavBrand href="{base}/">
     <img src={logo} class="me-3 h-6 sm:h-9" alt="Logo" />
-    <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Gallery of Optimal Layered Graph Aesthetics</span>
+    <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Gallery of Layered Graph Aesthetics</span>
 </NavBrand>
 <NavHamburger />
 <NavUl {activeUrl} {activeClass} {nonActiveClass}>

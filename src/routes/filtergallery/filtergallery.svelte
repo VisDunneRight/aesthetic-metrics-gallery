@@ -3,7 +3,7 @@
     import { Gallery, Toggle, Img, Button, Label, Range, Dropdown, DropdownItem, Checkbox, Search, Hr } from 'flowbite-svelte';
     import { base } from "$app/paths";
     import { Popover } from 'flowbite-svelte';
-    import { QuestionCircleSolid, ChevronDownOutline, AdjustmentsHorizontalOutline } from 'flowbite-svelte-icons';
+    import { QuestionCircleSolid, ChevronDownOutline, AdjustmentsHorizontalOutline, QuestionCircleOutline } from 'flowbite-svelte-icons';
 
     type Img = {
         src: string;
@@ -126,7 +126,7 @@
             <!-- <div class="flex-grow"></div> -->
             <div class="ms-3 me-3 w-75 hidden md:block">
                 <Label>Min nodes: {minValue}</Label>
-                <Range id="range-steps" min={minLimit} max={maxLimit} bind:value={minValue} on:change={filterByGraph} step=5 />
+                <Range id="range-steps" min={minLimit} max={maxLimit} bind:value={minValue} on:change={filterByGraph} step=5 color="dark" />
             </div>
 
             <Toggle bind:checked={selectedStream} on:change={filterGallery} class="me-3 flex-none md:flex-initial" color="teal">Toggle Streamlining</Toggle>
@@ -161,12 +161,12 @@
         </div>
 
         {#if visible}
-        <Hr/>
+        <Hr classHr="mt-6 mb-3" />
         <div class="flex gap-4 items-center mt-3 mb-2">
             <p class="w-64 flex-1 text-sm font-medium text-gray-700">
-                <span class="text-blue-900">Individual Aesthetic Metrics</span>
+                <span class="font-bold">Individual Aesthetic Metrics</span>
                 <button id="b3">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b3" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -177,14 +177,14 @@
                     </div>
                 </Popover>
             </p>
-            <Button on:click={() => selectAll(0,10)} class="flex-none" outline color="blue">Select All</Button>
-            <Button on:click={() => deselectAll(0,10)} class="flex-none" outline color="dark">Deselect All</Button>
+            <Button on:click={() => selectAll(0,10)} class="flex-none" size="sm" outline color="blue">Select All</Button>
+            <Button on:click={() => deselectAll(0,10)} class="flex-none" size="sm" outline color="dark">Deselect All</Button>
         </div>
         <div class="flex flex-wrap gap-2 mb-3">
             {#each categories.slice(0, 10) as category, index}
                 <Checkbox bind:checked={filters[index]} on:change={filterGallery} color="blue">{category}</Checkbox>
                 <button id={`bt${index}`} class="me-2">
-                    <QuestionCircleSolid class="w-5 h-5" />
+                    <QuestionCircleOutline class="w-5 h-5" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy={`#bt${index}`} class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -196,11 +196,13 @@
             {/each}
         </div>
 
+        <Hr classHr="my-3" />
+
         <div class="flex gap-4 items-center mt-3 mb-2">
             <p class="w-64 flex-1 text-sm font-medium text-gray-700">
-                <span class="text-blue-900">Metric + Crossing Minimization</span>
+                <span class="font-bold">Metric + Crossing Minimization</span>
                 <button id="b4">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b4" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -212,8 +214,8 @@
                     </div>
                 </Popover>
             </p>
-            <Button on:click={() => selectAll(10,19)} class="flex-none" outline color="blue">Select All</Button>
-            <Button on:click={() => deselectAll(10,19)} class="flex-none" outline color="dark">Deselect All</Button>
+            <Button on:click={() => selectAll(10,19)} class="flex-none" size="sm" outline color="blue">Select All</Button>
+            <Button on:click={() => deselectAll(10,19)} class="flex-none" size="sm" outline color="dark">Deselect All</Button>
         </div>
         <div class="flex flex-wrap gap-2 mb-3">
             {#each categories.slice(10,19) as category, index}
@@ -221,11 +223,13 @@
             {/each}
         </div>
 
+        <Hr classHr="my-3" />
+
         <div class="flex gap-4 items-center mt-3 mb-2">
             <p class="w-64 flex-1 text-sm font-medium text-gray-700">
-                <span class="text-blue-900">Y-Metric With Fixed X</span>
+                <span class="font-bold">Y-Metric With Fixed X</span>
                 <button id="b5">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b5" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -237,8 +241,8 @@
                     </div>
                 </Popover>
             </p>
-            <Button on:click={() => selectAll(19,24)} class="flex-none" outline color="blue">Select All</Button>
-            <Button on:click={() => deselectAll(19,24)} class="flex-none" outline color="dark">Deselect All</Button>
+            <Button on:click={() => selectAll(19,24)} class="flex-none" size="sm" outline color="blue">Select All</Button>
+            <Button on:click={() => deselectAll(19,24)} class="flex-none" size="sm" outline color="dark">Deselect All</Button>
         </div>
         <div class="flex flex-wrap gap-2 mb-3">
             {#each categories.slice(19,24) as category, index}
@@ -246,11 +250,13 @@
             {/each}
         </div>
 
+        <Hr classHr="my-3" />
+
         <div class="flex gap-4 items-center mt-3 mb-2">
             <p class="w-64 flex-1 text-sm font-medium text-gray-700">
-                <span class="text-blue-900">Y-Metric + Edge Length Minimization</span>
+                <span class="font-bold">Y-Metric + Edge Length Minimization</span>
                 <button id="b6">
-                    <QuestionCircleSolid class="w-5 h-5 ms-1 text-blue-700" />
+                    <QuestionCircleSolid class="w-5 h-5 ms-1" />
                     <span class="sr-only">Show information</span>
                 </button>
                 <Popover triggeredBy="#b6" class="w-72 text-sm font-light text-gray-500 bg-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400" placement="bottom-start">
@@ -261,8 +267,8 @@
                     </div>
                 </Popover>
             </p>
-            <Button on:click={() => selectAll(24,28)} class="flex-none" outline color="blue">Select All</Button>
-            <Button on:click={() => deselectAll(24,28)} class="flex-none" outline color="dark">Deselect All</Button>
+            <Button on:click={() => selectAll(24,28)} class="flex-none" size="sm" outline color="blue">Select All</Button>
+            <Button on:click={() => deselectAll(24,28)} class="flex-none" size="sm" outline color="dark">Deselect All</Button>
         </div>
         <div class="flex flex-wrap gap-2 mb-3">
             {#each categories.slice(24,28) as category, index}
@@ -311,11 +317,10 @@
     <!-- </div> -->
   
     <div class="h-10 sm:hidden"></div>
-    <div class="grid grid-cols-3 gap-4 p-2 mt-5">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-2 mt-5">
       {#each filteredImages as item}
         <!-- ring-2 ring-gray-300 -->
-        <div class="relative ring-2 ring-gray-300 p-2 pb-12 md:pb-7 rounded-lg">
-
+        <div class="relative ring-2 ring-gray-300 p-2 pb-12 md:pb-7 rounded-lg flex justify-center">
         <!-- <div class={`relative border-3 ${item.color} p-2 pb-5 rounded-lg`}> -->
             {#if item.src !== "images/incomplete.png"}
               <img src={`${base}/${item.src}`} alt={item.alt} class="h-auto max-w-full rounded-lg max-h-60" />
