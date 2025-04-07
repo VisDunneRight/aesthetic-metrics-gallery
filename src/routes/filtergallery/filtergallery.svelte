@@ -323,7 +323,7 @@
         <div class="relative ring-2 ring-gray-300 p-2 pb-12 md:pb-7 rounded-lg flex justify-center">
         <!-- <div class={`relative border-3 ${item.color} p-2 pb-5 rounded-lg`}> -->
             {#if item.src !== "images/incomplete.png"}
-              <img src={`${base}/${item.src}`} alt={item.alt} class="h-auto max-w-full rounded-lg max-h-60" />
+              <img src={`${base}/${item.src}`} alt={item.alt} class="max-w-full rounded-lg max-h-60 object-contain" />
             {:else}
               <p class="font-bold pb-4">Did not complete within 10 minutes</p>
             {/if}
